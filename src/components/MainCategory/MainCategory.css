@@ -1,0 +1,35 @@
+/* line 1, scss/pages/_home.scss */
+.category {
+    padding: 50px 0; }
+    /* line 3, scss/pages/_home.scss */
+    .category-swiper {
+      border-bottom: 1px solid rgba(170, 170, 170, 0.5);
+      padding-bottom: 50px !important; }
+    /* line 9, scss/pages/_home.scss */
+    .category-item__img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    /* line 15, scss/pages/_home.scss */
+    .category-item__title {
+      font-family: "Heebo", sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 19px;
+      letter-spacing: 0.5px;
+      color: #333333;
+      margin-top: 25px; }
+    /* line 25, scss/pages/_home.scss */
+    .category-item__all {
+      font-family: "Heebo", sans-serif;
+      font-style: normal;
+      font-size: 12px;
+      line-height: 19px;
+      letter-spacing: 0.5px;
+      color: #333333; }
+    .category-items{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 30px;
+    }

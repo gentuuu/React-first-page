@@ -1,0 +1,229 @@
+/* line 36, scss/pages/_home.scss */
+.recipe {
+    margin-top: 35px; }
+    /* line 38, scss/pages/_home.scss */
+    .recipe-content {
+      display: flex; }
+      @media only screen and (max-width: 1200px) {
+        /* line 38, scss/pages/_home.scss */
+        .recipe-content {
+          flex-direction: column-reverse; } }
+    /* line 44, scss/pages/_home.scss */
+    .recipe-left {
+      min-width: 327px; }
+      @media only screen and (max-width: 1200px) {
+        /* line 44, scss/pages/_home.scss */
+        .recipe-left {
+          min-width: 100%;
+          margin-top: 20px; } }
+      /* line 50, scss/pages/_home.scss */
+      .recipe-left-primary {
+        font-family: "Heebo", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 21px;
+        line-height: 28px;
+        letter-spacing: 0.5px;
+        color: #333333; }
+        @media only screen and (max-width: 480px) {
+          /* line 50, scss/pages/_home.scss */
+          .recipe-left-primary {
+            font-size: 34px;
+            margin-top: 30px; } }
+      /* line 63, scss/pages/_home.scss */
+      .recipe-left-items {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); }
+        @media only screen and (max-width: 1200px) {
+          /* line 63, scss/pages/_home.scss */
+          .recipe-left-items {
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 33px; } }
+        @media only screen and (max-width: 992px) {
+          /* line 63, scss/pages/_home.scss */
+          .recipe-left-items {
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 33px; } }
+        @media only screen and (max-width: 768px) {
+          /* line 63, scss/pages/_home.scss */
+          .recipe-left-items {
+            grid-template-columns: repeat(1, 1fr); } }
+      /* line 79, scss/pages/_home.scss */
+      .recipe-left-item {
+        background: #FFFFFF;
+        box-shadow: 0px 12px 24px rgba(68, 68, 68, 0.1);
+        display: flex;
+        padding: 10px;
+        margin-top: 8px;
+        border-radius: 10px; }
+        /* line 86, scss/pages/_home.scss */
+        .recipe-left-item__img {
+          width: 109px;
+          height: 109px;
+          border-radius: 10px; }
+          /* line 91, scss/pages/_home.scss */
+          .recipe-left-item__img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px; }
+        /* line 98, scss/pages/_home.scss */
+        .recipe-left-item__text {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          margin-left: 22px;
+          width: 57%; }
+          /* line 104, scss/pages/_home.scss */
+          .recipe-left-item__text-title {
+            font-family: "Heebo", sans-serif;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 16px;
+            line-height: 22px;
+            color: #333333; }
+          /* line 113, scss/pages/_home.scss */
+          .recipe-left-item__text-text {
+            font-family: "Heebo", sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: 0.5px;
+            color: #747474; }
+    /* line 126, scss/pages/_home.scss */
+    .recipe-right {
+      margin-left: 33px; }
+      @media only screen and (max-width: 1200px) {
+        /* line 126, scss/pages/_home.scss */
+        .recipe-right {
+          margin-left: 0px; } }
+      /* line 132, scss/pages/_home.scss */
+      .recipe-right-primary {
+        font-family: "Heebo", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 37px;
+        letter-spacing: 0.5px;
+        color: #333333; }
+      /* line 141, scss/pages/_home.scss */
+      .recipe-right-items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 31px;
+        margin-top: 30px; }
+        @media only screen and (max-width: 1200px) {
+          /* line 141, scss/pages/_home.scss */
+          .recipe-right-items {
+            margin-bottom: 30px; } }
+        @media only screen and (max-width: 992px) {
+          /* line 141, scss/pages/_home.scss */
+          .recipe-right-items {
+            grid-template-columns: repeat(2, 1fr); } }
+        @media only screen and (max-width: 480px) {
+          /* line 141, scss/pages/_home.scss */
+          .recipe-right-items {
+            grid-template-columns: repeat(1, 1fr); } }
+    /* line 158, scss/pages/_home.scss */
+    .recipe-item-last {
+      width: 100%;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-attachment: fixed;
+      background: #F4F4F4;
+      border-radius: 10px;
+      font-family: "Heebo", sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 37px;
+      letter-spacing: 0.5px;
+      color: #333333;
+      margin-right: 15px; }
+    /* line 176, scss/pages/_home.scss */
+    .recipe-item__img {
+      position: relative;
+      height: 300px;
+      border-radius: 10px; }
+      @media only screen and (max-width: 768px) {
+        /* line 176, scss/pages/_home.scss */
+        .recipe-item__img {
+          height: 250px; } }
+      /* line 183, scss/pages/_home.scss */
+      .recipe-item__img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px; }
+      /* line 189, scss/pages/_home.scss */
+      .recipe-item__img:hover .recipe-item__hover {
+        visibility: visible; }
+    /* line 196, scss/pages/_home.scss */
+    .recipe-item__title {
+      font-family: "Heebo", sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      letter-spacing: 0.5px;
+      color: #333333;
+      margin-top: 10px; }
+    /* line 206, scss/pages/_home.scss */
+    .recipe-item__category {
+      position: absolute;
+      top: 10px;
+      left: 27px; }
+      /* line 210, scss/pages/_home.scss */
+      .recipe-item__category-item {
+        font-family: "Heebo", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.5px;
+        color: #FFFFFF;
+        padding: 1px 7px;
+        background: #56CCF2;
+        border-radius: 10px;
+        display: inline-block;
+        margin-right: 15px; }
+    /* line 226, scss/pages/_home.scss */
+    .recipe-item__hover {
+      visibility: hidden;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      transition: visibility 0.3s; }
+      /* line 238, scss/pages/_home.scss */
+      .recipe-item__hover-items {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly; }
+      /* line 243, scss/pages/_home.scss */
+      .recipe-item__hover-item {
+        text-align: center;
+        display: flex;
+        flex-direction: column; }
+        /* line 247, scss/pages/_home.scss */
+        .recipe-item__hover-item img {
+          width: 42px;
+          height: 42px;
+          object-fit: contain; }
+        /* line 252, scss/pages/_home.scss */
+        .recipe-item__hover-item p {
+          font-family: "Heebo", sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 22px;
+          text-align: center;
+          letter-spacing: 0.5px;
+          color: #000000; }

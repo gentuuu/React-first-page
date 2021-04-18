@@ -1,0 +1,461 @@
+/* line 2, scss/components/_navigation.scss */
+.navigation {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: 300ms;
+    background-color: transparent;
+    height: 67px;
+    display: flex;
+    align-items: center; }
+    /* line 17, scss/components/_navigation.scss */
+    .navigation-wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      align-self: center;
+      transition: .3s;
+      position: relative; }
+    /* line 27, scss/components/_navigation.scss */
+    .navigation-content {
+      display: flex;
+      align-items: center; }
+      @media only screen and (max-width: 992px) {
+        /* line 27, scss/components/_navigation.scss */
+        .navigation-content {
+          flex-direction: row-reverse; } }
+    /* line 36, scss/components/_navigation.scss */
+    .navigation-menu {
+      display: flex;
+      align-items: center; }
+    /* line 44, scss/components/_navigation.scss */
+    .navigation__checkbox {
+      display: none; }
+    @media only screen and (max-width: 992px) {
+      /* line 50, scss/components/_navigation.scss */
+      .navigation__button {
+        height: 7rem;
+        top: 6rem;
+        right: 6rem;
+        border-radius: 50%;
+        z-index: 2000;
+        text-align: center;
+        cursor: pointer;
+        padding-left: 20px; } }
+    @media only screen and (max-width: 992px) {
+      /* line 68, scss/components/_navigation.scss */
+      .navigation__background {
+        height: 6rem;
+        width: 6rem;
+        border-radius: 50%;
+        position: fixed;
+        top: 6.5rem;
+        right: 6.5rem;
+        background-image: radial-gradient(#1b2d5d, #1b2d5d);
+        z-index: 1000;
+        transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); } }
+    /* line 87, scss/components/_navigation.scss */
+    .navigation__nav {
+      display: flex;
+      align-items: center; }
+      @media only screen and (max-width: 992px) {
+        /* line 87, scss/components/_navigation.scss */
+        .navigation__nav {
+          overflow: hidden;
+          height: 100vh;
+          position: fixed;
+          top: 0;
+          left: 0;
+          z-index: 1500;
+          opacity: 0;
+          width: 0;
+          transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); } }
+    /* line 104, scss/components/_navigation.scss */
+    .navigation__list {
+      display: flex;
+      list-style: none;
+      align-items: center; }
+      @media only screen and (max-width: 992px) {
+        /* line 104, scss/components/_navigation.scss */
+        .navigation__list {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          list-style: none;
+          text-align: center;
+          width: 100%;
+          flex-direction: column;
+          height: 100%;
+          overflow-y: scroll;
+          padding-top: 50px; } }
+    /* line 127, scss/components/_navigation.scss */
+    .navigation__link {
+      text-decoration: none;
+      color: #ffffff;
+      font-family: "Heebo", sans-serif;
+      font-size: 16px;
+      letter-spacing: 0.8px; }
+      /* line 134, scss/components/_navigation.scss */
+      .navigation__link:hover {
+        color: #fff;
+        transition: 0.5s; }
+      @media only screen and (max-width: 992px) {
+        /* line 142, scss/components/_navigation.scss */
+        .navigation__link:link, .navigation__link:visited {
+          display: inline-block;
+          font-size: 2.2rem;
+          font-weight: 300;
+          padding: 1rem 2rem;
+          color: #fff;
+          text-decoration: none;
+          text-transform: uppercase;
+          background-image: linear-gradient(110deg, transparent 0%, transparent 50%, #fff 50%);
+          background-size: 240%;
+          transition: all .4s; }
+        /* line 158, scss/components/_navigation.scss */
+        .navigation__link:hover, .navigation__link:active {
+          background-position: 100%;
+          color: #1b2d5d;
+          transform: translateX(1rem); } }
+    /* line 167, scss/components/_navigation.scss */
+    .navigation__right {
+      display: flex;
+      align-items: center; }
+      @media (max-width: 500px) {
+        /* line 167, scss/components/_navigation.scss */
+        .navigation__right {
+          display: none; } }
+    /* line 175, scss/components/_navigation.scss */
+    .navigation__right-span {
+      font-size: 20px;
+      color: #000;
+      font-family: "Heebo", sans-serif;
+      font-weight: 600;
+      text-align: center;
+      margin-left: 10px; }
+    /* line 184, scss/components/_navigation.scss */
+    .navigation__item {
+      margin: 1rem; }
+      /* line 186, scss/components/_navigation.scss */
+      .navigation__item .last {
+        font-family: "Heebo", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 18px;
+        text-align: center;
+        letter-spacing: 0.5px;
+        color: #FFFFFF;
+        background: #EB5757;
+        box-shadow: 0px 8px 24px rgba(13, 38, 54, 0.4);
+        border-radius: 25px;
+        width: 120px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+    /* line 208, scss/components/_navigation.scss */
+    .navigation__checkbox:checked ~ .navigation__background {
+      transform: scale(80); }
+    /* line 212, scss/components/_navigation.scss */
+    .navigation__checkbox:checked ~ .navigation__nav {
+      opacity: 1;
+      width: 100%; }
+      @media only screen and (max-width: 992px) {
+        /* line 212, scss/components/_navigation.scss */
+        .navigation__checkbox:checked ~ .navigation__nav {
+          background-image: radial-gradient(#1b2d5d, #1b2d5d); } }
+    @media only screen and (max-width: 992px) {
+      /* line 221, scss/components/_navigation.scss */
+      .navigation__icon {
+        position: relative;
+        margin-top: 3.5rem; }
+        /* line 227, scss/components/_navigation.scss */
+        .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+          width: 3rem;
+          height: 2px;
+          background-color: #fff;
+          display: inline-block; }
+        /* line 236, scss/components/_navigation.scss */
+        .navigation__icon::before, .navigation__icon::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          transition: all .2s; }
+        /* line 244, scss/components/_navigation.scss */
+        .navigation__icon::before {
+          top: -.8rem; }
+        /* line 245, scss/components/_navigation.scss */
+        .navigation__icon::after {
+          top: .8rem; } }
+    /* line 249, scss/components/_navigation.scss */
+    .navigation__button:hover .navigation__icon::before {
+      top: -1rem; }
+    /* line 253, scss/components/_navigation.scss */
+    .navigation__button:hover .navigation__icon::after {
+      top: 1rem; }
+    /* line 257, scss/components/_navigation.scss */
+    .navigation__checkbox:checked + .navigation__button .navigation__icon {
+      background-color: transparent;
+      position: fixed;
+      margin-left: -35px; }
+    /* line 263, scss/components/_navigation.scss */
+    .navigation__checkbox:checked + .navigation__button .navigation__icon .navigation__display {
+      display: none; }
+    /* line 268, scss/components/_navigation.scss */
+    .navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+      top: 0;
+      transform: rotate(135deg);
+      background: #fff; }
+    /* line 274, scss/components/_navigation.scss */
+    .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+      top: 0;
+      transform: rotate(-135deg);
+      background: #fff; }
+  
+  /* line 283, scss/components/_navigation.scss */
+  .page-navigation {
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: 300ms;
+    background-color: transparent;
+    height: 91px;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+    box-shadow: 0px 12px 24px rgba(68, 68, 68, 0.1); }
+    @media only screen and (max-width: 1200px) {
+      /* line 283, scss/components/_navigation.scss */
+      .page-navigation {
+        height: 135px; } }
+    /* line 305, scss/components/_navigation.scss */
+    .page-navigation-wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      align-self: center;
+      transition: .3s;
+      position: relative; }
+      @media only screen and (max-width: 1200px) {
+        /* line 305, scss/components/_navigation.scss */
+        .page-navigation-wrapper {
+          align-items: flex-start; } }
+    /* line 318, scss/components/_navigation.scss */
+    .page-navigation-content {
+      display: flex;
+      align-items: center;
+      width: 50%;
+      justify-content: space-between; }
+      @media only screen and (max-width: 1200px) {
+        /* line 318, scss/components/_navigation.scss */
+        .page-navigation-content {
+          flex-direction: column; } }
+      @media only screen and (max-width: 1200px) {
+        /* line 318, scss/components/_navigation.scss */
+        .page-navigation-content {
+          height: 135px;
+          align-items: flex-start;
+          width: 10%; } }
+    /* line 333, scss/components/_navigation.scss */
+    .page-navigation-menu {
+      display: flex;
+      align-items: center; }
+    /* line 341, scss/components/_navigation.scss */
+    .page-navigation__checkbox {
+      display: none; }
+    @media only screen and (max-width: 992px) {
+      /* line 347, scss/components/_navigation.scss */
+      .page-navigation__button {
+        height: 7rem;
+        top: 6rem;
+        right: 6rem;
+        border-radius: 50%;
+        z-index: 2000;
+        text-align: center;
+        cursor: pointer;
+        padding-left: 20px; } }
+    @media only screen and (max-width: 992px) {
+      /* line 365, scss/components/_navigation.scss */
+      .page-navigation__background {
+        height: 6rem;
+        width: 6rem;
+        border-radius: 50%;
+        position: fixed;
+        top: 6.5rem;
+        right: 6.5rem;
+        background-image: radial-gradient(#1b2d5d, #1b2d5d);
+        z-index: 1000;
+        transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); } }
+    /* line 384, scss/components/_navigation.scss */
+    .page-navigation__nav {
+      display: flex;
+      align-items: center; }
+      @media only screen and (max-width: 992px) {
+        /* line 384, scss/components/_navigation.scss */
+        .page-navigation__nav {
+          overflow: hidden;
+          height: 100vh;
+          position: fixed;
+          top: 0;
+          left: 0;
+          z-index: 1500;
+          opacity: 0;
+          width: 0;
+          transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); } }
+    /* line 401, scss/components/_navigation.scss */
+    .page-navigation__list {
+      display: flex;
+      list-style: none;
+      align-items: center; }
+      @media only screen and (max-width: 992px) {
+        /* line 401, scss/components/_navigation.scss */
+        .page-navigation__list {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          list-style: none;
+          text-align: center;
+          width: 100%;
+          flex-direction: column;
+          height: 100%;
+          overflow-y: scroll;
+          padding-top: 50px; } }
+    /* line 423, scss/components/_navigation.scss */
+    .page-navigation__link {
+      text-decoration: none;
+      color: #000;
+      font-family: "Heebo", sans-serif;
+      font-size: 16px;
+      letter-spacing: 0.8px; }
+      /* line 429, scss/components/_navigation.scss */
+      .page-navigation__link:hover {
+        color: #000;
+        transition: 0.5s; }
+      @media only screen and (max-width: 992px) {
+        /* line 436, scss/components/_navigation.scss */
+        .page-navigation__link:link, .page-navigation__link:visited {
+          display: inline-block;
+          font-size: 2.2rem;
+          font-weight: 300;
+          padding: 1rem 2rem;
+          color: #fff;
+          text-decoration: none;
+          text-transform: uppercase;
+          background-image: linear-gradient(110deg, transparent 0%, transparent 50%, #fff 50%);
+          background-size: 240%;
+          transition: all .4s; }
+        /* line 452, scss/components/_navigation.scss */
+        .page-navigation__link:hover, .page-navigation__link:active {
+          background-position: 100%;
+          color: #1b2d5d;
+          transform: translateX(1rem); } }
+    /* line 461, scss/components/_navigation.scss */
+    .page-navigation__right {
+      display: flex;
+      align-items: center; }
+      @media (max-width: 500px) {
+        /* line 461, scss/components/_navigation.scss */
+        .page-navigation__right {
+          display: none; } }
+    /* line 469, scss/components/_navigation.scss */
+    .page-navigation__right-span {
+      font-size: 20px;
+      color: #000;
+      font-family: "Heebo", sans-serif;
+      font-weight: 600;
+      text-align: center;
+      margin-left: 10px; }
+    /* line 478, scss/components/_navigation.scss */
+    .page-navigation__item {
+      margin: 1rem; }
+      /* line 480, scss/components/_navigation.scss */
+      .page-navigation__item .last {
+        font-family: "Heebo", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 18px;
+        text-align: center;
+        letter-spacing: 0.5px;
+        color: #FFFFFF;
+        background: #EB5757;
+        box-shadow: 0px 8px 24px rgba(13, 38, 54, 0.4);
+        border-radius: 25px;
+        width: 120px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+    /* line 502, scss/components/_navigation.scss */
+    .page-navigation__checkbox:checked ~ .page-navigation__background {
+      transform: scale(80); }
+    /* line 506, scss/components/_navigation.scss */
+    .page-navigation__checkbox:checked ~ .page-navigation__nav {
+      opacity: 1;
+      width: 100%; }
+      @media only screen and (max-width: 992px) {
+        /* line 506, scss/components/_navigation.scss */
+        .page-navigation__checkbox:checked ~ .page-navigation__nav {
+          background-image: radial-gradient(#1b2d5d, #1b2d5d); } }
+    @media only screen and (max-width: 992px) {
+      /* line 515, scss/components/_navigation.scss */
+      .page-navigation__icon {
+        position: relative;
+        margin-top: 3.5rem; }
+        /* line 521, scss/components/_navigation.scss */
+        .page-navigation__icon, .page-navigation__icon::before, .page-navigation__icon::after {
+          width: 3rem;
+          height: 2px;
+          background-color: #000;
+          display: inline-block; }
+        /* line 530, scss/components/_navigation.scss */
+        .page-navigation__icon::before, .page-navigation__icon::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          transition: all .2s; }
+        /* line 538, scss/components/_navigation.scss */
+        .page-navigation__icon::before {
+          top: -.8rem; }
+        /* line 539, scss/components/_navigation.scss */
+        .page-navigation__icon::after {
+          top: .8rem; } }
+    /* line 543, scss/components/_navigation.scss */
+    .page-navigation__button:hover .page-navigation__icon::before {
+      top: -1rem; }
+    /* line 547, scss/components/_navigation.scss */
+    .page-navigation__button:hover .page-navigation__icon::after {
+      top: 1rem; }
+    /* line 551, scss/components/_navigation.scss */
+    .page-navigation__checkbox:checked + .page-navigation__button .page-navigation__icon {
+      background-color: transparent;
+      position: fixed;
+      margin-left: -35px; }
+    /* line 557, scss/components/_navigation.scss */
+    .page-navigation__checkbox:checked + .page-navigation__button .page-navigation__icon .page-navigation__display {
+      display: none; }
+    /* line 562, scss/components/_navigation.scss */
+    .page-navigation__checkbox:checked + .page-navigation__button .page-navigation__icon::before {
+      top: 0;
+      transform: rotate(135deg);
+      background: #fff; }
+    /* line 568, scss/components/_navigation.scss */
+    .page-navigation__checkbox:checked + .page-navigation__button .page-navigation__icon::after {
+      top: 0;
+      transform: rotate(-135deg);
+      background: #fff; }
+  
+  @media only screen and (max-width: 1200px) {
+    /* line 575, scss/components/_navigation.scss */
+    .logo {
+      margin-top: 20px; } }
+  

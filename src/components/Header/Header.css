@@ -1,0 +1,164 @@
+/* line 1, scss/components/_header.scss */
+.header {
+    background: url(../../img/bg-header.jpg) center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 900px;
+    display: flex;
+    align-items: center;
+    position: relative; }
+    /* line 10, scss/components/_header.scss */
+    .header-img {
+      position: absolute;
+      bottom: -80px;
+      right: 130px;
+      z-index: 1; }
+      @media only screen and (max-width: 768px) {
+        /* line 10, scss/components/_header.scss */
+        .header-img {
+          display: none; } }
+    /* line 19, scss/components/_header.scss */
+    .header-content {
+      margin-left: 70px;
+      margin-top: -100px;
+      position: relative; }
+      @media only screen and (max-width: 768px) {
+        /* line 19, scss/components/_header.scss */
+        .header-content {
+          margin-left: 0px; } }
+    /* line 27, scss/components/_header.scss */
+    .header-primary {
+      font-family: "Heebo", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 72px;
+      line-height: 55px;
+      letter-spacing: 0.5px;
+      color: #EB5757; }
+      @media only screen and (max-width: 768px) {
+        /* line 27, scss/components/_header.scss */
+        .header-primary {
+          line-height: 80px; } }
+    /* line 39, scss/components/_header.scss */
+    .header-secondary {
+      font-family: "Heebo", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 36px;
+      line-height: 55px;
+      letter-spacing: 0.5px;
+      color: #FFFFFF;
+      margin-top: 10px; }
+    /* line 49, scss/components/_header.scss */
+    .header-text {
+      font-family: "Heebo", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 22px;
+      letter-spacing: 0.5px;
+      color: #FFFFFF;
+      margin-top: 32px;
+      max-width: 470px; }
+    /* line 60, scss/components/_header.scss */
+    .header-search {
+      width: 389px;
+      height: 46px;
+      border-radius: 27px;
+      margin-top: 45px; }
+      @media only screen and (max-width: 480px) {
+        /* line 60, scss/components/_header.scss */
+        .header-search {
+          width: 320px; } }
+      /* line 68, scss/components/_header.scss */
+      .header-search-input {
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        background: #fff;
+        height: 100%;
+        width: 100%;
+        border-radius: 27px; }
+        /* line 83, scss/components/_header.scss */
+        .header-search-input input {
+          font-family: "Heebo", sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 22px;
+          letter-spacing: 0.5px;
+          color: #333333;
+          height: 100%;
+          width: 95%;
+          border: none;
+          margin-left: 30px; }
+        /* line 97, scss/components/_header.scss */
+        .header-search-input input[type="submit"] {
+          cursor: pointer;
+          margin-left: 25px;
+          height: 40px;
+          border: none;
+          width: 40px;
+          color: transparent;
+         
+        }
+  
+  /* line 111, scss/components/_header.scss */
+  .page-header-search {
+    width: 389px;
+    height: 46px;
+    border-radius: 27px;
+    margin-right: 63px; }
+    @media only screen and (max-width: 1400px) {
+      /* line 111, scss/components/_header.scss */
+      .page-header-search {
+        width: 220px;
+        margin-bottom: 10px; } }
+    /* line 124, scss/components/_header.scss */
+    .page-header-search-input {
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -moz-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      background: #F4F4F4;
+      border-radius: 27px;
+      height: 100%;
+      width: 100%; }
+      /* line 139, scss/components/_header.scss */
+      .page-header-search-input input {
+        font-family: "Heebo", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0.5px;
+        color: #333333;
+        height: 100%;
+        width: 95%;
+        border: none;
+        margin-left: 30px;
+        background: #F4F4F4; }
+      /* line 154, scss/components/_header.scss */
+      .page-header-search-input input[type="submit"] {
+        cursor: pointer;
+        margin-left: 25px;
+        height: 40px;
+        border: none;
+        width: 40px;
+        color: transparent;
+        background: #F4F4F4;
+        /* background: url(../img/arrow-right.png) no-repeat center; */
+     }
